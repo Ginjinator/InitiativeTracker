@@ -4,13 +4,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
 <AnchorPane prefHeight="271.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerStartScreen">
    <children>
-      <Button layoutX="183.0" layoutY="92.0" mnemonicParsing="false" text="Get Same Names" />
-      <Button layoutX="177.0" layoutY="150.0" mnemonicParsing="false" text="Create New Names" />
-      <Button layoutX="197.0" layoutY="209.0" mnemonicParsing="false" text="Add Names" />
-      <Text layoutX="130.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Start Tracking">
+      <Button fx:id="sameNames" layoutX="193.0" layoutY="93.0" mnemonicParsing="false" onAction="#getNames" text="Same Names" />
+      <Button fx:id="newNames" layoutX="177.0" layoutY="150.0" mnemonicParsing="false" onAction="#createNames" text="Create New Names" />
+      <Button fx:id="addNames" layoutX="197.0" layoutY="209.0" mnemonicParsing="false" onAction="#addNames" text="Add Names" />
+      <Text layoutX="108.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Start Tracking with">
          <font>
             <Font size="20.0" />
          </font>
