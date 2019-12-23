@@ -22,7 +22,7 @@ public class Controller implements Initializable {
 
     private static ArrayList<String> characters;
     private static String characterNameFile = "CharactersNames.txt";
-    private static String characterNamePath = "C:/Users/erike/IdeaProjects/IntiativeTracker/CharacterNames.txt";
+    private static String characterNamePath = "C:\\Users\\erike\\IdeaProjects\\IntiativeTracker\\CharacterNames.txt";
 
     public static void loadScreen(String parent, ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(View.class.getResource(parent));

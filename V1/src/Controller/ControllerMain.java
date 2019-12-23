@@ -15,8 +15,11 @@ public class ControllerMain {
 
     public void initialize () throws IOException {
         Controller controller = new Controller();
-        controller.getCharacters();
+        characters = controller.getCharacters();
         ObservableList obList = FXCollections.observableList(characters);
+        this.charactersList.setItems(obList);
+        this.charactersList.setVisible(true);
+
     }
 
 }
