@@ -8,7 +8,8 @@ public class FileHandler implements Serializable {
     private String characterNameFile = "CharactersNames.txt";
     private String characterNamePath = "C:/Users/erike/IdeaProjects/IntiativeTracker/CharacterNames.txt";
 
-    public ArrayList<String> getCharacters() {
+    public ArrayList<String> getCharacters() throws IOException{
+        this.setCharacters();
         return characters;
     }
 
